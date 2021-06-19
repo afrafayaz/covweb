@@ -1,3 +1,3 @@
 # covweb
  
-https://github.com/afrafayaz/covweb
+https://github.com/afrafayaz/covweb/index.html
