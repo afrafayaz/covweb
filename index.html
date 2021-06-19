@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <title>COVWEB</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <type></type>
+    <!-- <style>
+        
+
+        #grad1 {
+        background-image: linear-gradient(red, yellow,blue);
+        height: 100%;
+}
+        </style> -->
+
+
+</head>
+
+<body>
+
+    <div class="main">
+        <p style="color: black;position: absolute;right:10%;top:5%">
+            <h2>COVWEB</h2>
+        </p>
+
+        <nav>
+            <!--  <div class="logo">
+              <img src="logo.jpeg">
+              </div> -->
+
+            <div class="nav-links">
+
+
+                <a href="index.html"><img src="logo3.png" title="HOME" style="width: 350px; height:96px;right: 9%;top:1.5%;position: absolute;"></a>a>
+                <a href="types.html"><img src="fig1.png" style="width: 100px; height:120px;right: 10%;top:17%;position: absolute;" title="History"></a>
+
+
+
+                <br>
+
+
+                <a href="vaccine.html"><img src="v2.png" style="width: 100px; height:100px;right: 25%;top:17%;position: absolute;" title="VACCINES"></a><br>
+                <a href="treat.html"><img src="t2.png" style="width: 100px; height:100px;right: 25%;top:35%;position: absolute;" title="TREATMENT"></a><br>
+                <a href="online.html"><img src="o1.png" style="width: 100px; height:100px;right: 10%;top:35%;position: absolute;" title="ONLINE CONSULTATION"></a><br>
+                <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"><img src="m1.png" style="width: 120px; height:120px;right: 9%;top:57%;position: absolute;" title="PRECAUTIONS"></a><br>
+                <a href="https://www.medicalnewstoday.com/articles/covid-19-increases-black-fungus-infection-risk-in-india"><img src="b1.png" style="width: 120px; height:120px;right: 25%;top:58%;position: absolute;" title="BLACK FUNGUS"></a><br>
+                <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf"><img src="c1.png" style="width: 100px; height:100px;right: 9%;bottom:10%;position: absolute;" title="HELPLINE"></a><br>
+                <a href="med.html"><img src="m2.png" style="width: 120px; height:120px;right: 25%;top:77%;position: absolute;" title="ORDER MEDICINES"></a><br>
+
+
+                <br>
+                <!--   <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <div class="history">
+                            <a href="types.html"><img src="fig1.png"></a>
+                            <figcaption>History</figcaption>
+                    </li>
+                    </div>
+                </ul> -->
+
+            </div>
+        </nav>
+
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="corona.png" class="corona1" width="400" height="400">
+            <img src="corona.png" class="corona2" width="180" height="180">
+            <!--top left-->
+            <img src="corona.png" class="corona3" width="250" height="250">
+            <img src="corona.png" class="corona4" width="250" height="250">
+            <img src="corona.png" class="corona5" width="200" height="200">
+            <!--beside middle-->
+            <img src="corona.png" class="corona6" width="240" height="240">
+            <!--bottom 1nd from right-->
+            <img src="corona.png" class="corona7" width="165" height="165">
+            <!--bottom 2nd from right-->
+            <img src="corona.png" class="corona8" width="150" height="150">
+            <!--top right-->
+            <div id="circle">
+                <div class="feature one">
+                    <img src="i4.png">
+                    <div>
+                        <h1>USE SANITIZER</h1><br>
+                    </div>
+
+                </div>
+
+                <div class="feature two">
+                    <img src="i3.png" height="50" width="50">
+                    <div>
+                        <h1>WEAR MASK</h1><br>
+
+                    </div>
+                </div>
+
+                <div class="feature three">
+                    <img src="i2.png">
+                    <div>
+                        <h1>
+
+                            VACCINATION
+                        </h1><br>
+
+                    </div>
+
+                </div>
+                <div class="feature four">
+                    <img src="i1.png">
+                    <div>
+                        <h1>TREATMENT</h1>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <div class="controls">
+        <img src="arrow.png" width="100" height="100" id="upBtn">
+        <h3 style="color: black">KEY POINTS</h3>
+        <img src="arrow.png" width="100" height="100" id="downBtn">
+
+    </div>
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function() {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+        }
+
+        downBtn.onclick = function() {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>
+
+
+<!-- left:350px top:100px -->

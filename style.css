@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #00FF00, #ADFF2F, #008000);
+}
+
+
+/*.nav-links {
+    flex: 1;
+    text-align: right;
+}*/
+
+
+/*.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20 35px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+}*/
+
+.information {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1050px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: ls;
+}
+
+.feature {
+    position: absolute;
+}
+
+.feature div {
+    margin-left: 80px;
+    margin-top: -50px;
+}
+
+.feature div p {
+    margin-top: 0px;
+}
+
+.feature img {
+    width: 70px;
+}
+
+.one {
+    top: 450px;
+    left: 750px;
+}
+
+.two {
+    top: 100px;
+    left: 370px;
+    transform: rotate(-90deg);
+}
+
+.three {
+    bottom: 465px;
+    left: 10px;
+    transform: rotate(-180deg);
+}
+
+.four {
+    bottom: 100px;
+    right: 370px;
+    transform: rotate(-270deg);
+}
+
+.corona1 {
+    position: absolute;
+    top: 34%;
+    left: 35%;
+    transform: translateY(-40%);
+    z-index: 1;
+    animation: rotation 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.corona2 {
+    position: absolute;
+    top: 23%;
+    left: 17%;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
+.corona3 {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
+.corona4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
+.corona5 {
+    position: absolute;
+    top: 47%;
+    left: 17%;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
+.corona6 {
+    position: absolute;
+    top: 77%;
+    left: 65%;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
+.corona7 {
+    position: absolute;
+    top: 79%;
+    left: 46%;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
+.corona8 {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
+.controls {
+    position: absolute;
+    right: 17%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls h3 {
+    margin: 15px 0;
+    color: white;
+}
+
+#upBtn {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#downBtn {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 500px solid black;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid black;
+    border-left: 650px solid black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.button1 {
+    /*India Vaccine Statistics */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    left: 77%;
+    top: 25%;
+}
+
+.button2 {
+    /*Worldwide Vaccine Statistics */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    left: 75%;
+    top: 10%;
+}
+
+.button3 {
+    border: none;
+    /*faq*/
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 80%;
+    top: 25%;
+}
+
+.button4 {
+    /*register or login*/
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    top: 38%;
+}
+
+.button5 {
+    border: none;
+    /*certificate*/
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    left: 78%;
+    top: 55%;
+}
+
+.button6 {
+    /*dos and donts*/
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    left: 78%;
+    top: 40%;
+}
+
+.button7 {
+    border: none;
+    /*why vaccine */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 80%;
+    top: 10%;
+}
+
+.button8 {
+    border: none;
+    /*after vaccine */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 80%;
+    top: 55%;
+}
+
+.button9 {
+    border: none;
+    /*practo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    left: 12%;
+    top: 40%;
+}
+
+.button10 {
+    border: none;
+    /*1mg */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 20%;
+    top: 55%;
+}
+
+.button11 {
+    border: none;
+    /*sakra */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 55%;
+}
+
+.vaccine img {
+    position: absolute;
+    top: 30%;
+    right: -60%;
+    height: 100px;
+    width: 100px;
+}
